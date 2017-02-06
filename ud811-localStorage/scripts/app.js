@@ -195,5 +195,8 @@
     });
   } else {
     app.updateForecastCard(injectedForecast);
+    app.selectedCities = [{key: injectedForecast.key, 
+                          label: injectedForecast.label}];
+    app.saveSelectedCities();
   }
 })();
